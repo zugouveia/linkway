@@ -1,0 +1,188 @@
+/* font-family: "Kanit", serif; */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* MODO DARK E LIGHT */
+:root{
+    --text-color: #000;
+    --bg-color: rgb(43,68,119);
+    --bg-color-gradient: linear-gradient(180deg, rgba(43,68,119,1) 0%, rgba(64,86,132,1) 47%, rgba(85,105,146,1) 100%);
+    --shadow-color: 5px 5px 1px rgba(0, 0, 0, 1);
+    --surface-color: rgba(255, 255, 255, 0.5);
+    --surface-color-hover: rgba(255, 255, 255, 1);
+    --switch-bg-url: url(./assets/sun2.svg);
+}
+
+.darkmode{
+    --text-color: #fbfbfb;
+    --bg-color:rgb(0,0,0);
+    --bg-color-gradient:linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(43,68,119,1) 47%, rgba(64,86,132,1) 100%);
+    --shadow-color: 5px 5px 1px rgba(160, 160, 160, 1);
+    --surface-color: rgba(56, 56, 56, 0.5);
+    --surface-color-hover: rgba(56, 56, 56, 1);
+    --switch-bg-url: url(./assets/moon-light.svg);
+}
+/* FIM MODO DARK E LIGHT */
+
+body{
+    font-family: "Kanit", serif;
+    color: var(--text-color);
+    /* background: url('./assets/Background-teste.png');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    height: 100vh;
+    background: var(--bg-color);
+    background: var(--bg-color-gradient);
+}
+
+.container{
+    margin: 100px auto 0;
+    width: 100%;
+    max-width: 550px;
+    padding: 0 24px;
+    border-radius: 10px;
+}
+
+/* PROFILE */
+.profile{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    gap: 10px;
+}
+
+.profile img{
+    width: 112px;
+    height: auto;
+}
+
+.profile #user{
+    font-size: 1.1rem;
+}
+
+.profile #title{
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+/* FIM PROFILE */
+
+/* SWITCH */
+#switch{
+    position: relative;
+    width: 64px;
+    margin: 20px auto;
+}
+
+#switch button{
+    width: 30px;
+    height: 30px;
+    background-image: var(--switch-bg-url);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    left: 3px;
+    top: 50%;
+    transform: translateY(-50%);
+    animation: slide-out 0.2s forwards;
+    transition: all 0.2s;
+}
+
+.darkmode #switch button{
+    animation: slide-in 0.2s forwards;
+  
+  }
+
+#switch span{
+    display: block;
+    width: 80px;
+    height: 35px;
+    background: var(--surface-color);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 9999px;
+}
+
+
+/* ANIMATION */
+@keyframes slide-in{
+    from{
+      left: 3px;
+    }
+    to{
+      left: 70%;
+    }
+  }
+  
+  @keyframes slide-out{
+    from{
+      left: 50%;
+    }
+    to{
+      left: 3px;
+    }
+  } 
+  /* FIM ANIMATION */
+
+/* FIM SWITCH */
+
+/* BOTTUNS */
+ul{
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+}
+
+li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    /* background-color: rgba(159, 106, 124, 0.1); */
+    /* box-shadow: 5px 7px 5px #772b44; */
+    position: relative;
+    background-color: var(--surface-color);
+    box-shadow: var(--shadow-color);/*MUDAR*/
+    border: 2px solid #2b4477;
+    transition: all 0.2s ease-in-out;
+}
+
+li:hover{
+    background-color: var(--surface-color-hover);/*MUDAR*/
+    scale: 1.08;
+}
+
+ul li a{
+    flex: 1;
+    text-align: center; 
+}
+
+ul i{
+    position: absolute;
+    left: 15px;
+    font-size: 1.3rem;
+}
+/* FIM BOTTUNS */
+
+/* FOOTER */
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    margin: 30px 0 20px;
+}
+
+footer span{
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+}
+/* FIM FOOTER */
