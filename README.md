@@ -1,7 +1,7 @@
 <h1 align="center"> LexFortis </h1>
 
 <p align="center">
-Este site é uma simulação, representando uma plataforma de links chamada UniLink.
+Este site é uma simulação, representando uma plataforma de links chamada LinkWay.
 
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -26,11 +26,11 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-O UniLink é uma plataforma que permite agrupar todos os seus links em um único lugar. Ideal para redes sociais, negócios e criadores de conteúdo, ele facilita o acesso às suas páginas, oferecendo uma experiência organizada e profissional. Crie seu link personalizado e conecte seu público de forma prática e eficiente!
+O LinkWay é uma plataforma que permite agrupar todos os seus links em um único lugar. Ideal para redes sociais, negócios e criadores de conteúdo, ele facilita o acesso às suas páginas, oferecendo uma experiência organizada e profissional. Crie seu link personalizado e conecte seu público de forma prática e eficiente!
 
-- [Acesse o projeto finalizado, online]()
+- [Acesse o projeto finalizado, online](https://linkway.netlify.app)
 
-- [Acesse o projeto finalizado, no github](https://zugouveia.github.io/unilink/)
+- [Acesse o projeto finalizado, no github](https://zugouveia.github.io/linkway/)
 
 
 ---
