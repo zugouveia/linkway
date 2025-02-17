@@ -11,7 +11,7 @@ Este site é uma simulação, representando uma plataforma de links chamada UniL
 <br>
 
 <p align="center">
-  <img alt="Projeto UniLink" src=".github/preview.png" width="70%" >
+  <img alt="Projeto UniLink" src=".github/preview2.png" width="70%" >
 </p>
 
 ## 🧠 Tecnologias
